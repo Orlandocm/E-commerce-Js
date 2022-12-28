@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+ol, ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+form, input,textarea,select,button,label {
+  font-family: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+}

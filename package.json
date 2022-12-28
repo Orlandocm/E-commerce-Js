@@ -1,0 +1,20 @@
+{
+  "name": "proyecto-js",
+  "version": "1.0.0",
+  "description": "Sellos Guatire",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss styles/scss/styles.scss styles/css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [
+    "ES"
+  ],
+  "author": "OrlandoCM",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

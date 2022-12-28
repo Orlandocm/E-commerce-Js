@@ -1,0 +1,113 @@
+@import 'reset';
+@import 'variables';
+@import 'mixin';
+
+header {
+ .up-menu, .hide-mobile-tablet {
+    @include breakpoint(md){
+      display: none;
+    }
+ }
+ .mediun-menu {
+    width: 100%;
+    height: 4.25em;
+    @include flex(row,nowrap,space-between,center);
+    .menu-icons {
+      width: 1.5em;
+      height: 1.5em;
+      margin: 0px 6px 0 6px;
+    }
+    .menu-logo{
+      width: 5em;
+      height: 5em;
+    }
+ }
+ .hide {
+  @include breakpoint(md){
+    transform: translate(-500px);
+  }
+ }
+ .list-menu-mobile{
+    @include breakpoint(md){
+      width: 50%;
+      height: 100vh;
+      position: absolute;
+      background-color: $thirdColor;
+      transition: all .6s ease-in ;
+    }
+    ul {
+      cursor: pointer;
+      .list-menu__items {
+        @include breakpoint(md){
+          font-size: 1.5rem;
+          transition: all .2s ease;
+        }
+        padding: 1em;
+        transition: all .2s ease-in;
+        &:hover{
+          background-color: rgba(128, 128, 128, 0.259);
+          transform: translateY(10px);
+        } 
+      }
+      .list-menu__line-animation:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color:  $firstColor;
+        transform: scalex(0);
+        transform-origin: bottom right;
+        transition: transform 0.6s ease-out;
+      }
+      .list-menu__line-animation:hover:after{
+        transform: scalex(1);
+        transform-origin: bottom left;
+      }
+    }
+ }
+ .bot-menu {
+  background-color: black;
+  color: $thirdColor;
+  font-weight: $lightWeight;
+  @include flex (row,nowrap,center,center);
+  @include breakpoint(sm){
+    font-size: 0.8em;
+    height: 1.6em;
+  }
+ }
+}
+
+//main
+.card-container{
+  margin-top: 1.2em;
+  @include flex (row,wrap,space-around,center);
+  @include breakpoint(md){
+    @include flex (column,nowrap,center,center);
+    .card{
+      margin-top: 1.2em;
+      padding: 0.6em;
+      .card__description{
+        .card-buttons__styles{
+          font-weight: $lightWeight;
+          border: 1px solid $firstColor;
+          border-radius: 8px;
+          padding: 2px 6px;
+          cursor: pointer;
+          &:hover {
+            background-color: $SecondColor;
+          }
+        }
+        @include flex (column,nowrap,center,center);
+        .card__buttons{
+          @include flex (row,nowrap,space-between,center);
+          width: 80%;
+        }
+      }
+    }
+  }
+  .favorite-icon {
+    width: 1em;
+  }
+}
