@@ -1,11 +1,18 @@
 const containerProducts = document.getElementById('container-products');
+const carCleaner = document.getElementById('car-cleaner');
+const htmlCleaner = ()=> {
+  while(containerProducts.firstChild){
+    containerProducts.removeChild(containerProducts.firstChild);
+  }
+};
 
 if (localStorage.getItem("Car")){
    recoveredCar = JSON.parse(localStorage.getItem('Car'));
 }
 
+
 const showProduct = ()=> {
-  containerProducts.innerHTML = "";
+  htmlCleaner();
   recoveredCar.forEach(article => {
     const card = document.createElement('div');
       card.classList.add('card-container__products');
@@ -42,3 +49,7 @@ const deleteToCar =(id)=>{
   localStorage.setItem("Car",JSON.stringify(car));
 };
 
+carCleaner.addEventListener('click', ()=>{
+  htmlCleaner();
+  localStorage.setItem("Car",JSON.stringify(car));
+});

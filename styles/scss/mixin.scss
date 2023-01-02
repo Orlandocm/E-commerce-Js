@@ -21,3 +21,14 @@ $breakpoints: (
   justify-content: $just;
   align-items: $align;
 }
+
+@mixin btnStyle {
+  font-weight: $lightWeight;
+          border: 1px solid $firstColor;
+          border-radius: 8px;
+          padding: 2px 6px;
+          cursor: pointer;
+          &:hover {
+            background-color: $SecondColor;
+          }
+};
