@@ -1,0 +1,10 @@
+[
+  {"name":"Trodad 4911", "size":"38 x 14 mm","price":25,"img":"./img/products/PR_4911.jpg","count":1,"id":"4911","favorite":false},
+  {"name":"Trodad 4912", "size":"47 x 18 mm","price":30, "img":"./img/products/PR_4912.jpg","count":1,"id":"4912","favorite":false},
+  {"name":"Trodad 4913", "size":"58 x 22 mm","price":35, "img":"./img/products/PR_4913.jpg","count":1,"id":"4913","favorite":false},
+  {"name":"Trodad 4914", "size":"64 x 26 mm","price":40, "img":"./img/products/PR_4914.jpg","count":1,"id":"4914","favorite":false},
+  {"name":"Trodad 4915", "size":"7. x 25 mm","price":50, "img":"./img/products/PR_4915.jpg","count":1,"id":"4915","favorite":false},
+  {"name":"Trodad 4630", "size":"Ø 30 mm","price":30, "img":"./img/products/PR_4630.jpg","count":1,"id":"4630","favorite":false},
+  {"name":"Trodad 4638", "size":"Ø 38 mm","price":35, "img":"./img/products/PR_4638.jpg","count":1,"id":"4638","favorite":false},
+  {"name":"Trodad 4642", "size":"Ø 42 mm","price":40, "img":"./img/products/PR_4642.jpg","count":1,"id":"4642","favorite":false}
+]

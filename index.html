@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;300;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@200;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <link rel="stylesheet" href="./styles/css/styles.css">
   <title>Document</title>
 </head>
@@ -22,14 +23,14 @@
       </ul>
     </div>
     <nav class="mediun-menu">
-      <a href="#"><img class="menu-icons hide-desktop" id="burger-menu" src="./img/icons/menu-N.svg" alt="Busqueda"></a>
+      <a href="#"><img class="menu-icons hide-desktop" id="burger-menu" src="./img/icons/menu-N.svg" alt="Menu"></a>
       <a href="#"><img class="menu-icons hide-mobile-tablet" src="./img/icons/search-N.svg" alt="Busqueda"></a>
       <a href="#"><img class="menu-logo" src="./img/logo/SELLOS GUATIRE.svg" alt="Logo"></a>
       <div>
         <a href="#"><img class="menu-icons" src="./img/icons/search-N.svg" alt="Busqueda"></a>
         <a href="#"><img class="menu-icons hide-mobile-tablet" src="./img/icons/users-N.svg" alt="Usuarios"></a>
-        <a href="#"><img class="menu-icons" src="./img/icons/corazon.svg" alt="Me Gusta"></a>
-        <a href="./pages/car.html"><img class="menu-icons" src="./img/icons/shopping-cart-N.svg" alt="car"></a>
+        <a href="./pages/favorite.html"><img class="menu-icons" src="./img/icons/corazon.svg" alt="Me Gusta"></a>
+        <a href="./pages/cart.html"><img class="menu-icons" src="./img/icons/shopping-cart-N.svg" alt="car"></a>
       </div>
     </nav>
     <div class="list-menu-mobile list-menu-desktop hide" id="menu">
@@ -44,11 +45,14 @@
     </div>
   </header>
   <main>
-    <div id="container" class="card-container">
-    </div>
+    <div id="container" class="cards__container"></div>
   </main>
   <footer>
+    <div class="footer">
+      <p class="footer__text">© copyright</p>
+    </div>
   </footer>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>
