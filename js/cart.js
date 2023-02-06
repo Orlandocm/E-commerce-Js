@@ -19,7 +19,7 @@ const showProduct = ()=> {
       card.classList.add('cart__container__products');
       card.innerHTML = `
           <div>
-            <img src=".${article.img}" alt="${article.name}">
+            <img class= "cards__container__img" src=".${article.img}" alt="${article.name}">
             <div class="cart__description">
               <h3>${article.name}</h3>
               <div class="count__container">

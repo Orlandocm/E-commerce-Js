@@ -25,7 +25,7 @@ function showCards(data){
     const card = document.createElement('div');
     card.classList.add('cards__container__card');
     card.innerHTML += `
-      <img src="${article.img}" alt="${article.name}">
+      <img class= "cards__container__img" src="${article.img}" alt="${article.name}">
       <div class="cards__container__description">
         <h3>${article.name}</h3>
         <p>Tamaño: ${article.size}</p>

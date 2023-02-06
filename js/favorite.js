@@ -18,7 +18,7 @@ const showFavorite = (products) =>{
       const card = document.createElement('div');
       card.classList.add('favorite__conainer__card')
       card.innerHTML += `
-        <img src=".${product.img}" alt="${product.name}">
+        <img class= "cards__container__img" src=".${product.img}" alt="${product.name}">
         <div class="favorite__conainer__description">
           <h3>${product.name}</h3>
           <div class="count__Container">
